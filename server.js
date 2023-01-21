@@ -15,12 +15,12 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
-app.use(express.json())
-app.use(express.static(path.join(__dirname, "build")))
-app.use(express.urlencoded({ extended: true }))
-app.get('*', (req, res)=>{
-  res.sendFile(path.join(__dirname, 'build/index.html'));
-});
+// app.use(express.json())
+// app.use(express.static(path.join(__dirname, "build")))
+// app.use(express.urlencoded({ extended: true }))
+// app.get('*', (req, res)=>{
+//   res.sendFile(path.join(__dirname, 'build/index.html'));
+// });
 
 app.listen(3002, () => {
   console.log('Server listening on port 3002');
