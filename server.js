@@ -31,6 +31,10 @@ initializeApp({
 })
 const db = getFirestore();
 
+app.get('/', (req, res) => {
+  res.sendStatus(200)
+})
+
 app.post("/posts", async (req, res) => {
   try {
     console.log(req.body)
