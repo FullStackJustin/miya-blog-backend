@@ -8,7 +8,7 @@ const app = express();
 // const path = require('path');
 
 const corsOptions = {
-  origin: ['https://miyareads.netlify.app'],
+  origin: ['https://miyareads.netlify.app', 'http://localhost:3000'],
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 app.use(cors(corsOptions));
